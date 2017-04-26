@@ -1,0 +1,61 @@
+{
+  "name": "version-exists",
+  "version": "0.0.0",
+  "description": "Check if version of a NPM module exists",
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "bin": {
+    "version-exists": "bin/version-exists.js"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "test": "npm run lint && ava",
+    "lint": "xo"
+  },
+  "repository": "ntwcklng/version-exists",
+  "engines": {
+    "node": ">= 6.6.0"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "arguments",
+    "util",
+    "bin",
+    "commander",
+    "minimist"
+  ],
+  "xo": {
+    "extends": "prettier"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "author": "ntwcklng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ntwcklng/version-exists/issues"
+  },
+  "homepage": "https://github.com/ntwcklng/version-exists#readme",
+  "devDependencies": {
+    "ava": "0.19.1",
+    "eslint-config-prettier": "1.6.0",
+    "execa": "0.6.3",
+    "husky": "0.13.3",
+    "lint-staged": "3.4.0",
+    "prettier": "0.22.0",
+    "xo": "0.18.1"
+  },
+  "dependencies": {
+    "args": "^2.6.1",
+    "chalk": "^1.1.3",
+    "node-fetch": "^1.6.3",
+    "npm-name": "^3.0.0"
+  }
+}
