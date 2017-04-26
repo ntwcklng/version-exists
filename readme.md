@@ -66,4 +66,4 @@ $ npm install -g version-exists
 
 ## License
 
-MIT © [Marvin Mieths](https://ntwcklng.now.sh)
+MIT © [Marvin Mieth](https://ntwcklng.now.sh)
