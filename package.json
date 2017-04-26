@@ -1,6 +1,6 @@
 {
   "name": "version-exists",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check if version of a NPM module exists",
   "files": [
     "lib"
@@ -24,8 +24,8 @@
     "arguments",
     "util",
     "bin",
-    "commander",
-    "minimist"
+    "version",
+    "check"
   ],
   "xo": {
     "extends": "prettier"
@@ -46,7 +46,6 @@
   "devDependencies": {
     "ava": "0.19.1",
     "eslint-config-prettier": "1.6.0",
-    "execa": "0.6.3",
     "husky": "0.13.3",
     "lint-staged": "3.4.0",
     "prettier": "0.22.0",
