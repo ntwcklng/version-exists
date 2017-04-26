@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Check if version of a NPM module exists",
   "files": [
-    "lib"
+    "bin",
+    "index.js"
   ],
   "main": "index.js",
   "bin": {
