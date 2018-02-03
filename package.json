@@ -1,6 +1,6 @@
 {
   "name": "version-exists",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Check if version of a NPM module exists",
   "files": [
     "bin",
