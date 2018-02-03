@@ -18,4 +18,10 @@ versionExists(args.sub[0], args.sub[1]).then(exists => {
   console.log(`
     Version ${chalk.blue(args.sub[1])} of the module ${chalk.blue(args.sub[0])} ${exists ? chalk.green('exist') : chalk.red('does not exist') }!
   `)
-}).catch(err => console.log(err))
+  if (!exists) {
+    process.exit(1)
+  }
+}).catch(err => {
+  console.log(err)
+  process.exit(1)
+})
